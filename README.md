@@ -1,1 +1,31 @@
 # HW4
+
+Please use D2L to turn in both the PDF output and your R Markdown file.
+
+### Q1. (24 pts) 
+For this question, consider modeling bat counts using a Poisson distribution as a sampling model.
+
+#### a. Prior (4 pts)
+Select and justify a prior for this setting.
+
+#### b. Posterior (4 pts)
+Using nightly bat counts recorded over a two week period (below), derive a posterior distribution for the mean term in the Poisson distribution.
+```{r}
+bat.counts <- c(3,3,92,101,54,5,28,2,0,0,6,0)
+```
+Please formally write out this distribution and create a figure to visualize the distribution.
+
+#### c. Posterior Predictive Distribution (4 pts)
+Use the computational procedure to create a posterior predictive distribution and create a plot of this distribution. With samples from the posterior predictive distribution, compute:
+
+- The probability of new observation in the interval [20, 30]
+- The probability of a new observation equal to 2.
+
+#### d. Posterior Predictive Check (4 pts)
+A common model checking diagnostic is to do a posterior predictive check. The goal is to determine whether your posterior predictive distribution is a realistic fit for the data. The idea is that for the model (sampling model + prior) to be reliable, it should be able to generate the actual data. Create a visual comparison of the data and the posterior predictive distribution, what are your observations for the comparison between the posterior predictive distribution and the data?
+
+#### e. Posterior Summary (4 pts)
+Regardless of your results from part d, summarize your posterior distribution for theta, the mean term in the Poisson distribution.
+
+#### f. MCMC Analysis (4 pts)
+Use an MCMC approach, (JAGS or Stan) to compute the posterior distribution. Compare your MCMC results with that from part e.
