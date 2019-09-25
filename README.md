@@ -29,3 +29,7 @@ Regardless of your results from part d, summarize your posterior distribution fo
 
 #### f. MCMC Analysis (4 pts)
 Use an MCMC approach, (JAGS or Stan) to compute the posterior distribution. Compare your MCMC results with that from part e.
+
+Hints for Stan: [Poisson Distribution](https://mc-stan.org/docs/2_18/functions-reference/poisson.html) [Gamma Distribution](https://mc-stan.org/docs/2_18/functions-reference/gamma-distribution.html)
+
+Hints for JAGS: [JAGS Manual](http://people.stat.sc.edu/hansont/stat740/jags_user_manual.pdf) [Poisson Regression](https://georgederpa.github.io/teaching/countModels.html)
